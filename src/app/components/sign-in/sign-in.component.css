@@ -1,0 +1,13 @@
+h3 {
+    margin-top: 50px;
+font-size: 40px;
+font-style: italic;
+color: black;
+}
+div, .formGroup{
+margin-top: 15px;
+}
+::-webkit-input-placeholder { color:black; } /* WebKit */
+:-moz-placeholder { color: black; } /* Firefox 18- */
+::-moz-placeholder { color: black; } /* Firefox 19+ */
+:-ms-input-placeholder { color: black; } /* IE 10+ */

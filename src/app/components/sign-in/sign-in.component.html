@@ -1,0 +1,42 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+  
+      <div class="authBlock">
+        <h3 style="text-align: center;">Sign In</h3>
+        <div class="formGroup" style="margin-left: 600px;">
+          <input type="text" class="formControl" placeholder="Username" #userName required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" style="margin-left: 600px;" class="formControl" placeholder="Password" #userPassword required>
+        </div>
+  
+        <!-- Calling SignIn Api from AuthService -->
+        <div class="formGroup">
+          <input type="button" style="margin-left: 600px;" class="btn btn-success" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+        </div>
+  
+        <div class="formGroup">
+          <span style="margin-left: 605px;"class="or"><span class="orInner">Or</span></span>
+        </div>
+  
+        <!-- Calling GoogleAuth Api from AuthService -->
+        <div class="formGroup">
+          
+          <button type="button" style="margin-left: 600px;" class="btn btn-danger" (click)="authService.GoogleAuth()">
+            <i class="fab fa-google-plus-g"></i>
+            Log in with Google
+          </button>
+        </div>
+  
+        <div class="forgotPassword">
+          <span style="margin-left: 600px;" routerLink="/forgot-password">Forgot Password?</span>
+        </div>
+      </div>
+  
+      <div class="redirectToLogin">
+        <span style="margin-left: 600px;">Don't have an account?<span  type="button"class="redirect" routerLink="/register-user"> Sign Up</span></span>
+      </div>
+  
+    </div>
+  </div>
